@@ -10,6 +10,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body{
+    background-color: #ECEFF1;
+}
+
 .header{
     background-color: #263238;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
