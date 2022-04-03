@@ -88,7 +88,7 @@ hr{
 }
 
 .ferramentas{
-    background-image: url(/images/programming.png);
+    background-image: url(../images/programming.png);
     background-size: cover;
     background-repeat: no-repeat;
     color: whitesmoke;
