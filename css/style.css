@@ -266,6 +266,7 @@ a:hover{
 
     .aboutme{
         border-radius: 0px;
+        text-align: center;
     }
 
     .little-more-img{
@@ -298,6 +299,12 @@ a:hover{
     }
 }
 
+@media (max-width: 800px){
+    .layout{
+        width: 95%;
+    }
+}
+
 @media (max-width: 650px){
     .header ul{
         display: flex;
@@ -315,5 +322,11 @@ a:hover{
 
     .profile img{
         top: 330px;
+    }
+}
+
+@media (max-width: 430px){
+    .experience, .learning{
+        text-align: center;
     }
 }
