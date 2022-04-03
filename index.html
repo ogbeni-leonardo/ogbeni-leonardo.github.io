@@ -12,73 +12,95 @@
     <title>Portfólio | Leonardo Araújo</title>
 </head>
 <body>
-    <div class="cabecalho">
+    <div class="header">
         <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#tecnologias">Ferramentas & Tecnologias</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#tools">Ferramentas & Tecnologias</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
         </ul>
         <div style="clear: both;"></div>
     </div>
 
     <!-- Agrupar todo o conteúdo da página -->
     <div class="layout">
-        <!-- Seção de apresentação -->
-        <div class="apresentacao grupo">
-            <img src="./images/avatar_theme.png" alt="Foto de Leonardo Araújo" width="200px">
-            <h1>Leonardo L. C. Araújo</h1>
-            <p>Olá, seja bem-vindo(a)!</p>
-            <br>
-            <p class="apresentacao-pessoal"><em>Eu sou o Léo, natural de uma cidadezinha no interior do Rio Grande do Norte. A ideia de construir algo, definitivamente, é encantadora aos meus olhos. Apaixonado por tecnologia, vi nela a oportunidade de fazer a diferença na vida de outras pessoas e também na minha.</em></p>
-        </div>
+        <!-- Apresentação -->
+        <div class="presentation group">
+            <div class="profile">
+                <img src="./images/avatar_theme.png" alt="Foto de Leonardo Araújo" width="200px">
+                <h1>Leonardo L. C. Araújo</h1>
+                <p>Software Developer</p>
+            </div>
+
+            <div class="aboutme">
+                <h3>Olá, seja bem-vindo(a)!</h3>
+                <p class="apresentacao-pessoal"><em>"Eu sou o Léo, natural de uma cidadezinha no interior do Rio Grande do Norte. A ideia de construir algo, definitivamente, é encantadora aos meus olhos. Apaixonado por tecnologia, vi nela a oportunidade de fazer a diferença na vida de outras pessoas e também na minha."</em></p>
+            </div>
+        </div>        
 
         <!-- Seção de características pessoais -->
-        <div class="caracteristicas grupo" id="sobre">
-            <h3>UM POUCO MAIS SOBRE MIM</h3>
-            <hr>
-            <p>Dentre muitas características minhas algumas acabam sendo de maior destaque, como:</p>
-            <ul>
-                <li><strong>Curiosidade:</strong> A minha vontade de entender como as coisas funcionam me motivam a buscar as respostas à questões que considero importante.</li>
-                <li><strong>Determinação:</strong> Acompanhada da curiosidade, a determinação me ajuda a não parar no meio do caminho e a estabelecer objetivos.</li>
-                <li><strong>Persistência:</strong> Pedras no caminho podem acabar servindo de desculpas para parar. A persistência me ajuda a ver elas como apenas um desafio que preciso enfrentar para chegar no meu destino.</li>
-            </ul>
+        <div class="qualities group" id="about">
+            <div class="little-more">
+                <h3>UM POUCO MAIS SOBRE MIM</h3>
+                <p>Dentre muitas características minhas algumas acabam sendo de maior destaque, como:</p>
+                <ul>
+                    <li><strong>Curiosidade:</strong> A minha vontade de entender como as coisas funcionam me motivam a buscar as respostas à questões que considero importante.</li>
+                    <li><strong>Determinação:</strong> Acompanhada da curiosidade, a determinação me ajuda a não parar no meio do caminho e a estabelecer objetivos.</li>
+                    <li><strong>Persistência:</strong> Pedras no caminho podem acabar servindo de desculpas para parar. A persistência me ajuda a ver elas como apenas um desafio que preciso enfrentar para chegar no meu destino.</li>
+                </ul>
+            </div>
+            <div class="little-more-img"></div>
         </div>
 
         <!-- Seção de ferramentas -->
-        <div class="ferramentas grupo" id="tecnologias">
-            <h3>FERRAMENTAS & TECNOLOGIAS</h3>
-            <hr>
-            <h4>Estou aprendendo:</h4>
+        <div class="tools group" id="tools">
+            <div class="tools-img"></div>
+            <div class="show-tools">
+                <h3>FERRAMENTAS & TECNOLOGIAS</h3>
 
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40px" />
-                
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40px" />
-                
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40px" />
-                
-            <h4>Com relativa experiência:</h4>
+                <h4>Tecnologias com experiência:</h4>
 
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="40px" />
-                
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40px" />
+                <div class="experience"> 
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" width="45px"/>
+
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" width="45px"/>
+
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" width="45px"/>
+                </div>
+
+                <h4>Tecnologias em processo de aprendizagem:</h4>
+
+                <div class="learning">   
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="45px"/>
+
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="45px"/>
+
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="45px"/>
+                </div>
+            </div>
         </div>
 
         <!-- Seção de projetos -->
-        <div class="projetos grupo" id="projetos">
-            <h3>PROJETOS</h3>
-            <hr>
-            <p>Nenhum projeto foi encontrado.</p>
+        <div class="projects group" id="projects">
+            <div class="projects-list">
+                <h3>PROJETOS</h3>
+                <div class="main-projects">
+                    <p>Nenhum projeto foi encontrado.</p>
+                </div>
+            </div>
+            <div class="projects-img"></div>
         </div>
 
         <!-- Seção de contato -->
-        <div class="contato grupo" id="contato">
-            <h3>CONTATO</h3>
-            <hr>
-            <a href="mailto:ogbeni.leonardo@outlook.com" class="fa fa-envelope" target="_blank"></a>
-            <a href="https://github.com/ogbeni-leonardo" class="fa fa-github" target="_blank"></a>
-            <a href="https://www.linkedin.com/in/ogbeni-leonardo/" class="fa fa-linkedin" target="_blank"></a>
-            <a href="https://wa.me/5584981820801" class="fa fa-whatsapp" target="_blank"></a>
+        <div class="contact group" id="contact">
+            <div class="contact-img"></div>
+            <div class="contact-list">
+                <h3>CONTATO</h3>
+                <a href="mailto:ogbeni.leonardo@outlook.com" class="fa fa-envelope" target="_blank"><span>E-mail</span></a>
+                <a href="https://github.com/ogbeni-leonardo" class="fa fa-github" target="_blank"><span>GitHub</span></a>
+                <a href="https://www.linkedin.com/in/ogbeni-leonardo/" class="fa fa-linkedin" target="_blank"><span>Linkedin</span></a>
+                <a href="https://wa.me/5584981820801" class="fa fa-whatsapp" target="_blank"><span>Whatsapp</span></a>
+            </div>
         </div>
     </div> 
 </body>

@@ -1,120 +1,315 @@
+:root{
+    --background-theme: #F5F5F5;
+    --color-theme: #304FFE;
+    --light-color: #CFD8DC;
+}
+
 *{
     margin: 0 auto;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;;
+    font-family: 'Open Sans', sans-serif;
 }
 
-body{
-    background-color: whitesmoke;
+.header{
+    background-color: #263238;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
+    padding: 25px;
 }
 
-.cabecalho{
-    padding: 20px;
-    background-color: #2d3436;
-    color: whitesmoke;
-    box-shadow: 0px 0px 5px rgba(0,0,0,.5);
-}
-
-.cabecalho ul{
+.header ul{
     float: right;
 }
 
-.cabecalho li{
-    list-style-type: none;
-    display: inline;
-    margin: 0px 10px;
+.header li{
+    display: inline-block;
+    margin: 0 10px;
 }
 
-.cabecalho a{
+a{
     text-decoration: none;
+    color: var(--light-color);
     padding: 15px;
     border-radius: 5px;
-    color: #2d8fce;
 }
 
-.cabecalho a:hover{
-    cursor: pointer;
-    background-color: #2d8fce;
-    color: white;
-}
-
-.grupo{
-    margin: 10px 0px;
-    padding: 30px;
-    background-color: rgb(220, 221, 214);
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+a:hover{
+    background-color: var(--color-theme);
 }
 
 .layout{
-    height: 100%;
+    margin: 80px auto 30px;
     width: 80%;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 20px;
 }
 
-.apresentacao{
+.group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-bottom: 2px solid var(--light-color);
+    background-color: transparent;
+}
+
+.group > div{
+    background-color: var(--background-theme);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* Seção de apresentação */
+
+.presentation, .qualities, .tools, .projects, .contact{
+    align-items: stretch;
+}
+
+.profile{
+    width: 40%;
     text-align: center;
+    flex-direction: column;
+    border-radius: 20px 0 0 0;
 }
 
-.apresentacao > img{
-    box-shadow: 0px 0px 20px rgba(0,0,0,.8);
-    border-radius: 50%;
+.profile img{
+    position: absolute;
+    top: 90px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
 }
 
-.apresentacao-pessoal{
-    margin-top: 10px;
-    width: 80%;
+.profile h1{
+    margin-top: 80px;
+    color: var(--color-theme);
 }
 
-hr{
+.aboutme{
+    flex-direction: column;
+    background-color: var(--color-theme) !important;
+    color: var(--background-theme);
+    width: 60%;
+    justify-content: center;
+    border-radius: 0px 20px 0px 0px;
+    min-height: 280px;
+}
+
+.aboutme h3{
+    color: var(--background-theme) !important;
+    margin-bottom: 30px;
+}
+
+/* Seção - Um pouco mais sobre mim */
+
+.little-more{
+    flex-direction: column;
+    width: 65%;
+}
+
+.group h3{
+    color: var(--color-theme);
+    margin-bottom: 25px;
+}
+
+.little-more h3{
+    text-align: left;
+    width: 100%;
+}
+
+.little-more p{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.little-more li{
+    list-style: none;
+}
+
+.little-more li:nth-child(even){
     margin: 15px 0;
 }
 
-.caracteristicas p{
-    margin-bottom: 15px;
-}
-
-
-.caracteristicas ul{
-    width: 95%;
-}
-
-.caracteristicas li{
-    list-style-type: none;
-}
-
-.caracteristicas li:nth-child(2){
-    list-style-type: none;
-    margin: 20px 0;
-}
-
-.ferramentas{
-    background-image: url(/images/programming.png);
+.little-more-img{
+    background-image: url(../images/check.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    color: whitesmoke;
+    width: 35%;
+    background-position: 45%;
 }
 
-.ferramentas > h4{
+/* Seção ferramentas e tecnologias */
+
+.tools-img{
+    background-image: url(../images/programming.png);
+    background-size: cover;
+    width: 45%;
+}
+
+.show-tools{
+    flex-direction: column;
+    width: 55%;   
+}
+
+.show-tools h4{
+    width: 100%;
+    text-align: left;
     margin-bottom: 15px;
 }
 
-.ferramentas > img{
-    margin: 5px;
+.show-tools h4:last-of-type{
+    margin-top: 15px;
 }
 
-.contato{
+.experience, .learning{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: var(--light-color);
+    border-radius: 5px;
+}
+
+.experience img:nth-child(even), .learning img:nth-child(even){
+    margin: 0 10px;
+}
+
+/* Seção de projetos */
+.projects-list{
+    display: block !important;
+    width: 70%;
     text-align: center;
 }
 
-.contato a{
-    text-decoration: none;
+.main-projects{
+    background-color: var(--light-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.projects-img{
+    background-image: url(../images/matrix.jpg);
+    background-size: cover;
+    width: 30%;
+    height: 300px;
+}
+
+/* Seção de contato */
+
+.contact{
+    border: 0px;
+}
+
+.contact-img{
+    background-image: url(../images/contact.jpg);
+    background-size: cover;
+    background-position: 20% 50%;
+    width: 60%;
+    border-radius: 0 0 0 20px;
+    margin: 0px;
+}
+
+.contact-list{
+    flex-direction: column;
+    width: 40%;
+    border-radius: 0 0 20px 0;
+    box-sizing: border-box;
 }
 
 .fa{
-    padding: 10px;
-    background-color: #2d8fce;
-    color: whitesmoke;
+    padding: 15px;
+    color: var(--light-color);
+    background-color: var(--color-theme);
     border-radius: 5px;
-    margin: 10px 5px;
-    font-size: 30px;
+}
+
+.contact a{
+    box-sizing: border-box;
+    text-decoration: none;
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+.contact a span{
+    margin-left: 20px;
+}
+
+
+@media (max-width: 1200px){
+    .header ul{
+        float: none;
+        text-align: center;
+    }
+
+    .profile h1{
+        margin-top: 110px;
+    }
+}
+
+@media (max-width: 900px){
+    .group{
+        flex-direction: column;
+    }
+
+    .group > div{
+        width: 100%;
+    }
+
+    .profile{
+        border-radius: 20px 20px 0 0;
+    }
+
+    .aboutme{
+        border-radius: 0px;
+    }
+
+    .little-more-img{
+        height: 380px;
+    }
+
+    .tools{
+        flex-direction: column-reverse;
+    }
+
+    .tools-img{
+        height: 380px;
+    }
+
+    .projects-img{
+        height: 380px;
+    }
+
+    .contact{
+        flex-direction: column-reverse;
+    }
+
+    .contact-list{
+        border-radius: 0px;
+    }
+
+    .contact-img{
+        height: 380px;
+        border-radius: 0 0 20px 20px;
+    }
+}
+
+@media (max-width: 650px){
+    .header ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header ul li{
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    .layout{
+        margin-top: 100px;
+    }
+
+    .profile img{
+        top: 330px;
+    }
 }
