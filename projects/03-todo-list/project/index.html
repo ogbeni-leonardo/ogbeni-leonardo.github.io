@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5b995a9bc1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Project | To Do List</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 id="titulo">Minha Lista de Tarefas</h1>
+            <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
+        </header>
+
+        <section id="adicionar">
+            <input type="text" id="texto-tarefa" title="Digite sua tarefa" placeholder="Digite a sua tarefa...">
+            <button id="criar-tarefa">Adicionar tarefa</button>
+        </section>
+
+        <section id="conteudo">
+            <ol id="lista-tarefas"></ol>
+            <div id="botoes">
+                <button id="apaga-tudo"><i class="fa-solid fa-broom"></i><span>Remover <b>todas</b> as tarefas</span></button>
+                <button id="remover-finalizados"><i class="fa-solid fa-check"></i><span>Remover <b>Tarefas concluídas</b></span></button>
+                <button id="salvar-tarefas"><i class="fa-solid fa-floppy-disk"></i><span>Salvar Tarefas</span></button>
+                <button id="mover-cima"><i class="fa-solid fa-arrow-up"></i><span>Mover para Cima</span></button>
+                <button id="mover-baixo"><i class="fa-solid fa-arrow-down"></i><span>Mover para Baixo</span></button>
+                <button id="remover-selecionado"><i class="fa-solid fa-xmark"></i><span>Remover <b>Item Selecionado</b></span></button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+const projects = [
+  {
+    category: 'trybe',
+    title: 'Lessons Learned',
+    link: './projects/01-lessons-learned/index.html',
+    description: 'Você vai desenvolver um site que contenha uma série de informações sobre o que você aprendeu aqui na Trybe ao longo dos últimos três blocos. Seu site deverá estar com elementos posicionados e estilizados e além disto, deverá conter semântica apropriada para que seja acessível e melhor ranqueado.',
+    color: 'teal',
+  },
+  {
+    category: 'trybe',
+    title: 'Pixels Art',
+    link: './projects/02-pixels-art/index.html',
+    description: 'Você irá implementar uma página web que contém uma paleta de cores funcional que poderá ser utilizada para criar desenhos em pixels. Para isto você irá utilizar JavaScript, CSS e HTML.',
+    color: '#6a1b9a',
+  },
+  {
+    category: 'trybe',
+    title: 'ToDo List',
+    link: './projects/03-todo-list/index.html',
+    description: 'Será desenvolvido uma lista de tarefas usando HTML, CSS e JavaScript.',
+    color: 'rgb(191 54 12)',
+  },
+  {
+    category: 'trybe',
+    title: 'Meme Generator',
+    link: './projects/04-meme-generator/index.html',
+    description: 'Um site onde é possível fazer o upload de fotos para memes.',
+    color: 'rgb(38 50 56)',
+  },
+  {
+    category: 'trybe',
+    title: 'Color Guess',
+    link: './projects/05-color-guess/index.html',
+    description: 'Será desenvolvida uma aplicação utilizando JavaScript, HTML e CSS. Nesta aplicação deverá ser possível jogar um jogo de adivinhação de cores e sua pontuação deverá atualizar de acordo com os acertos.',
+    color: 'rgb(0 77 64)',
+  },
+  {
+    category: 'trybe',
+    title: 'Mystery Letter',
+    link: './projects/06-mystery-letter/index.html',
+    description: 'Será desenvolvida uma aplicação utilizando JavaScript, HTML e CSS. Sua função será a de gerar cartas misteriosas.',
+    color: 'rgb(0 77 64)',
+  },
+  {
+    category: 'trybe',
+    title: 'TrybeWarts',
+    link: './projects/07-trybewarts/index.html',
+    description: 'Neste projeto, você irá desenvolver uma página de formulário da Escola de Magia de Trybewarts, em que as pessoas estudantes poderão enviar seus feedbacks sobre ela. O tema desse projeto é baseado na obra "Harry Potter", de J. K. Rowling, já que programar é o mais próximo que podemos chegar de algo verdadeiramente mágico! ',
+    color: 'rgb(50 167 145)',
+  },
+];

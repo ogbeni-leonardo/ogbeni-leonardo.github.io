@@ -1,0 +1,208 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: Open Sans, sans-serif;
+  line-height: 1.5em;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(253, 251, 251);
+
+  --color-theme: teal;
+}
+
+#cabecalho {
+  position: fixed;
+  top: 0;
+  background-color: rgb(38, 50, 56);
+  width: 100%;
+  opacity: 0.9;
+}
+
+#titulo {
+  color: whitesmoke;
+  margin: 20px 0 20px 20px;
+}
+
+#navegador {
+  background-color: var(--color-theme);
+  padding: 10px 0;
+}
+
+#navegador li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+#navegador a {
+  color: whitesmoke;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+#apresentacao a {
+  text-decoration: none;
+  color: var(--color-theme);
+}
+
+#navegador a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#principal {
+  margin-top: 180px;
+  margin-bottom: 40px;
+  width: 80%;
+  background-color: rgb(236, 239, 241);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+#principal section:nth-child( even ) {
+  background-color: rgb(207, 216, 220);
+}
+
+#principal li {
+  list-style-position: inside;
+}
+
+/* Seção de apresentação */
+#apresentacao {
+  text-align: center;
+  padding: 30px;
+}
+
+#minha_foto {
+  border-radius: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#apresentacao h2 {
+  font-size: 2em;
+}
+
+/* Configurando o display padrão das seções */
+.flex-display {
+  display: flex;
+}
+
+.elemento {
+  padding: 30px;
+}
+
+.elemento h3 {
+  color: var(--color-theme);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+#principal .flex-display .bloco-tema {
+  background-color: var(--color-theme);
+  color: whitesmoke;
+}
+
+.bloco-tema h3 {
+  color: whitesmoke;
+}
+
+.lado-esquerdo {
+  width: 60%;
+}
+
+.lado-direito {
+  width: 40%;
+}
+
+#descricao {
+  text-align: justify;
+}
+
+#descricao strong {
+  margin-left: 20px;
+}
+
+
+table {
+  border: 0;
+  border-collapse: collapse;
+  background-color: rgb(236, 239, 241);
+  margin: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+td , th {
+  border: 1px solid rgb(207, 216, 220);
+  padding: 4px 10px;
+  width: 150px;
+}
+
+th {
+  text-align: center;
+}
+
+tr th {
+  background-color: rgb(93, 98, 100);
+  color: whitesmoke;
+}
+
+tr td {
+  font-weight: 900;
+}
+
+tr:nth-child( even ) {
+  background-color: rgb(236, 239, 241);
+}
+
+tr td:nth-child( n+2 ) {
+  text-align: center;
+}
+
+#titulo-tabela {
+  background-color: var(--color-theme);
+  text-transform: uppercase;
+  color: whitesmoke;
+}
+
+.fa-check {
+  color: darkgreen;
+}
+
+.fa-close {
+  color: darkred;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 0 10px;
+}
+
+.stretch {
+  align-items: stretch;
+  background-color: transparent;
+}
+
+.licoes_a_aprender {
+  width: 100%;
+  border-radius: 0 0 0 10px;
+}
+
+.passagem {
+  border-radius: 0 0 10px;
+}
+
+.passagem h3 {
+  text-align: center;
+}
+
+footer {
+  background-color: var(--color-theme);
+  text-align: center;
+  padding: 30px;
+  color: whitesmoke;
+}
+
+footer p {
+  background-color: var(--color-theme);
+}

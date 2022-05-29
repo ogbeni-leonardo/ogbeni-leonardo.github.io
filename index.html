@@ -1,234 +1,227 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/5b995a9bc1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <title>Portfólio | Leonardo Araújo</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="author" content="Leonardo C Araújo">
+  <meta name="description" content="Este é o portfólio de Leonardo C Araújo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+  <link rel="apple-touch-icon" sizes="57x57" href="./icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+  <link rel="manifest" href="./icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Portfólio | Leonardo C Araújo</title>
 </head>
+
 <body>
-    <!-- Cabeçalho da página -->
-    <header id="header">
-        <nav id="nav">
-            <ul>
-                <li><a href="#aboutme">Sobre</a></li>
-                <li><a href="#tools">Ferramentas & Tecnologias</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
-        <div style="clear: both;"></div>
-    </header>
+  <aside>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <button type="button" class="navigation__button navigation__button--active" page-index="welcome"
+            title="Página Inicial">
+            <i class="navigation__icon fa-solid fa-user-astronaut"></i>
+          </button>
+        </li>
+        <li class="navigation__item">
+          <button type="button" class="navigation__button" page-index="projects" title="Projetos">
+            <i class="navigation__icon fa-solid fa-clone"></i>
+          </button>
+        </li>
+        <li class="navigation__item">
+          <button type="button" class="navigation__button" page-index="contact" title="Contato">
+            <i class="navigation__icon fa-solid fa-paper-plane"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </aside>
 
-    <main id="main-content">
-        <!-- Seção de apresentação -->
-        <section id="presentation" class="group">
-            <section id="profile" class="block">
-                <img src="./images/avatar.png" alt="Foto de Leonardo Araújo" width="200px">
-                <h1>Leonardo L. C. Araújo</h1>
-                <p>Software Developer</p>
-                <div id="controls">
-                    <div id="change-color" class="control">
-                        <i class="fa-solid fa-palette"></i>
-                        <input type="color" id="color-picker" value="#40739e" title="Selecionador de cores">
-                    </div>
-                    <div id="dark-light" class="control">
-                        <i id="theme" class="fa-solid fa-lightbulb" title="Alternar tema"></i>
-                    </div>
-                </div>
-            </section>
+  <!-- Welcome -->
+  <div class="main-container main-container--active" page-name="welcome">
+    <section class="welcome">
+      <div class="welcome__aside">
+        <img src="./images/avatar.png" class="welcome__aside__avatar" alt="Imagem de Leonardo C Araújo" />
+        <h1 class="welcome__aside__name">Leonardo C Araújo</h1>
+        <h2 class="welcome__aside__area">Web Developer</h2>
+        <p class="welcome__aside__status">
+          “Amante de tecnologia, admirador da natureza e curioso pelo
+          universo!”
+        </p>
+        <ul class="welcome__aside__list">
+          <li class="welcome__aside__item">
+            <a href="https://github.com/ogbeni-leonardo" target="_blank" title="Github">
+              <i class="welcome__aside__icon fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li class="welcome__aside__item">
+            <a href="https://www.linkedin.com/in/ogbeni-leonardo" target="_blank" title="Linkedin">
+              <i class="welcome__aside__icon fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="welcome__aside__item">
+            <a href="https://wa.me/5584981820801" target="_blank" title="Whatsapp">
+              <i class="welcome__aside__icon fa-brands fa-whatsapp"></i>
+            </a>
+          </li>
+          <li class="welcome__aside__item">
+            <a href="mailto:ogbeni.leonardo@outlook.com" target="_blank" title="E-mail">
+              <i class="welcome__aside__icon fa-solid fa-at"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="welcome__content">
+        <h1 class="welcome__content__title">Seja muito bem-vindo(a)!</h1>
+        <div class="inside-container arrow">
+          <p class="welcome__content__paragraph">
+            "Eu sou o Léo, natural de uma cidadezinha no interior do Rio
+            Grande do Norte. A ideia de construir algo, definitivamente, é
+            encantadora aos meus olhos. Apaixonado por tecnologia, vi nela a
+            oportunidade de fazer a diferença na vida de outras pessoas e
+            também na minha."
+          </p>
+        </div>
+        <div class="inside-container welcome__content__attributes">
+          <h2 class="welcome__content__attributes__title">Atributos pessoais</h2>
+          <hr />
+          <ul id="welcome__content__attributes__list"></ul>
+        </div>
+        <button type="button" class="more-info" page-index="about-me">
+          Saiba mais<i class="more-info__icon fa-solid fa-arrow-down"></i>
+        </button>
+      </div>
+    </section>
+  </div>
 
-            <section id="aboutme" class="block theme">
-                <h2>Olá, seja bem-vindo(a)!</h2>
-                <p class="apresentacao-pessoal"><em>"Eu sou o Léo, natural de uma cidadezinha no interior do Rio Grande do Norte. A ideia de construir algo, definitivamente, é encantadora aos meus olhos. Apaixonado por tecnologia, vi nela a oportunidade de fazer a diferença na vida de outras pessoas e também na minha."</em></p>
-            </section>
-        </section>        
+  <!-- About Me -->
+  <div class="main-container" page-name="about-me">
+    <section class="about-me">
+      <h1 class="section-title">Um pouco mais sobre mim</h1>
+      <div class="about-me__message">
+        <img src="./images/avatar.png" class="about-me__avatar" alt="Imagem de Leonardo C Araújo" />
+        <div class="inside-container arrow">
+          <p class="about-me__paragraph">“Uma característica sempre marcante em mim foi a curiosidade &ndash;
+            curiosidade para entender como as coisas funcionam. Quando criança tinha o hábito de desmontar eletrônicos
+            (mesmo sem entender nada a respeito) e achava incrível como tava tudo tão organizado. Meu primeiro contato
+            com um computador foi bem parecido, só que dessa vez o que me chamou atenção foi o sistema… <i>Como era
+              possível criar algo tão interativo?</i> Desde esse primeiro contato tenho investido em conhecer como essas
+            tecnologias funcionam. <em><b>Ter o poder de criação em suas mãos te dá a capacidade de construir coisas
+                incríveis e descobrir a solução para diversos problemas que te afetam a nível pessoal, mas te dá também
+                a capacidade de ajudar outras pessoas.</b></em>”
+          </p>
+        </div>
+      </div>
+      <h2 class="section-title section-title--tech">Aqui estão as tecnologias que tenho familiaridade e experiência</h2>
+      <ul class="inside-container about-me__list">
+        <li class="about-me__item">
+          <i class="about-me__icon devicon-html5-plain-wordmark" title="HTML5"></i>
+        </li>
+        <li class="about-me__item">
+          <i class="about-me__icon devicon-css3-plain-wordmark" title="CSS"></i>
+        </li>
+        <li class="about-me__item">
+          <i class="about-me__icon devicon-javascript-plain" title="JavaScript"></i>
+        </li>
+        <li class="about-me__item">
+          <i class="about-me__icon devicon-git-plain-wordmark" title="Git"></i>
+        </li>
+        <li class="about-me__item">
+          <i class="about-me__icon devicon-github-original-wordmark" title="Github"></i>
+        </li>
+        <li class="about-me__item">
+          <i class="about-me__icon devicon-python-plain-wordmark" title="Python"></i>
+        </li>
+        <li class="about-me__item">
+          <i class="about-me__icon devicon-markdown-original" title="Markdown"></i>
+        </li>
+        <li class="about-me__item">
+          <i class="about-me__icon devicon-bash-plain" title="Bash"></i>
+        </li>
+      </ul>
+      <button type="button" class="more-info" page-index="projects">
+        Visite meus projetos<i class="more-info__icon fa-solid fa-arrow-down"></i>
+      </button>
+    </section>
+  </div>
 
-        <!-- Seção de características pessoais -->
-        <section id="qualities" class="group">
-            <section id="little-more" class="block no-theme">
-                <h3>UM POUCO MAIS SOBRE MIM</h3>
-                <p>Dentre muitas características minhas algumas acabam sendo de maior destaque, como:</p>
-                <ul>
-                    <li><strong>Curiosidade:</strong> A minha vontade de entender como as coisas funcionam me motivam a buscar as respostas à questões que considero importante.</li>
-                    <li><strong>Determinação:</strong> Acompanhada da curiosidade, a determinação me ajuda a não parar no meio do caminho e a estabelecer objetivos.</li>
-                    <li><strong>Persistência:</strong> Pedras no caminho podem acabar servindo de desculpas para parar. A persistência me ajuda a ver elas como apenas um desafio que preciso enfrentar para chegar no meu destino.</li>
-                </ul>
-            </section>
-
-            <section class="img-banner-icon block theme">
-                <!-- Icon by BECRIS on freeicons.io -->
-                <img src="./images/check-img.png" alt="Ícone de checado">
-            </section>
+  <!-- Projects -->
+  <div class="main-container" page-name="projects">
+    <section class="projects">
+      <h1 class="section-title">Meus Projetos</h1>
+      <div class="projects__content">
+        <ul class="inside-container">
+          <li>
+            <button type="button" class="project__selector project__selector--active"
+              project-page-selector="trybe">Projetos Trybe</button>
+          </li>
+        </ul>
+        <section class="projects__pages">
+          <ul project-page-name="trybe" class="project__page--active"></ul>
         </section>
+      </div>
+      <button type="button" class="more-info" page-index="contact">
+        Gostaria de me enviar uma mensagem?<i class="more-info__icon fa-solid fa-arrow-down"></i>
+      </button>
+    </section>
+  </div>
 
-        <!-- Seção de ferramentas -->
-        <section id="tools" class="group">
-            <section id="show-tools" class="block no-theme">
-                <h3>FERRAMENTAS & TECNOLOGIAS</h3>
-                
-                <h4>Aqui estão algumas das tecnologias que tenho experiência:</h4>
-                
-                <div id="experience"> 
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" alt="Python"/>
-                    
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" alt="Git"/>
-                    
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="GitHub"/>
-                </div>
-                
-                <h4>E aqui estão aquelas em processo de aprendizagem:</h4>
-                
-                <div id="learning">   
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="HTML5"/>
-                    
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="CSS3"/>
-                    
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"/>
-                </div>
-            </section>
+  <!-- Contact-->
+  <div class="main-container" page-name="contact">
+    <section class="contact">
+      <form class="contact__form inside-container">
+        <h1 class="section-title">Me mande uma mensagem</h1>
+        <div class="contact__form__name">
+          <label for="firstname">
+            Primeiro nome:
+            <input type="text" id="firstname" placeholder="Digite seu primeiro nome" required>
+          </label>
+          <label for="lastname">
+            Sobrenome:
+            <input type="text" id="lastname" placeholder="Digite seu sobrenome" required>
+          </label>
+        </div>
+        <label for="email">
+          E-mail:
+          <input type="email" id="email" placeholder="Digite seu e-mail" required>
+        </label>
+        <label for="text-area">
+          Escreva sua mensagem:
+          <textarea id="text-area" cols="30" rows="10" minlength="2" maxlength="1500"
+            placeholder="Digite sua mensagem aqui..." required></textarea>
+          <p id="char-counter">0/1500</p>
+        </label>
+        <button type="submit" id="contact__submit">Enviar mensagem</button>
+      </form>
+      <div class="alert-message">
+        <i class="alert-message__icon fa-solid fa-circle-exclamation"></i>
+        Fico muito feliz por seu interesse em me contatar. Mas sinto informar que ainda não cheguei nessa parte!
+      </div>
+    </section>
+  </div>
 
-            <section class="img-banner-icon block theme">
-                <!-- Icon by ColourCreatype on freeicons.io  -->
-                <img src="./images/tools-img.png" alt="Ícone de ferramentas">
-            </section>
-        </section>
-
-        <!-- Seção de projetos -->
-        <section id="projects" class="group">
-            <section id="show-projects" class="block no-theme">
-                <h3>PROJETOS</h3>
-                <h4>Aqui estão alguns dos projetos desenvolvidos por mim:</h4>
-                <div id="main-projects">
-                    <div id="portfolio">
-                        <p>Nenhum projeto foi encontrado.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="img-banner-icon block theme">
-                <!-- Icon by www.wishforge.games on freeicons.io -->
-                <img src="./images/notebook.png" alt="Código no notebook">
-            </section>
-        </section>
-
-        <!-- Seção de contato -->
-        <section id="contact" class="group">
-            <section id="contact-link" class="block no-theme">
-                <h3>CONTATO</h3>
-                <div>
-                    <a href="mailto:ogbeni.leonardo@outlook.com" class="fa fa-envelope" target="_blank"><span>E-mail</span></a>
-                    <a href="https://github.com/ogbeni-leonardo" class="fa fa-github" target="_blank"><span>GitHub</span></a>
-                    <a href="https://www.linkedin.com/in/ogbeni-leonardo/" class="fa fa-linkedin" target="_blank"><span>Linkedin</span></a>
-                    <a href="https://wa.me/5584981820801" class="fa fa-whatsapp" target="_blank"><span>Whatsapp</span></a>
-                </div>
-            </section>
-
-            <section class="img-banner-icon block theme">
-                <!-- Icon by charlie on freeicons.io -->
-                <img src="./images/balloon-img.png" alt="Balão de mensagem">
-            </section>
-        </section>
-    </main>
-
-    <footer id="footer">
-        <section>
-            <p>Portfólio criado e sendo constantemente atualizado por Leonardo C. Araújo.</p>
-        </section>
-    </footer>
-
-    <script>
-        /* Atribuindo função de mudança de cor padrão quando o color picker tiver sua cor mudada */
-        let colorPicker = document.getElementById("color-picker");
-
-        colorPicker.addEventListener("change", changeMainColor, false);
-
-        function changeMainColor(event){
-            let colorSelected = event.target.value;
-            document.body.style.setProperty("--color-theme", colorSelected);
-        }
-
-        /* Alternando tema da página */
-        let theme = document.getElementById("theme");
-
-        /* Propriedades de estilização */
-
-        let root = document.querySelector(":root");
-
-        /* Armazenando as propriedades alteradas */
-
-        let properties = getComputedStyle(root);
-
-        theme.onclick = function(){
-            let className = this.className.split(" ");
-
-            let classElements = ["fa-lightbulb"];
-
-            if (className[0] === "fa-solid"){
-                classElements.unshift("fa-regular");
-
-                /* Alternando para o tema claro */
-
-                root.style.setProperty("--body-background", " rgb(253 251 251)");
-                root.style.setProperty("--light-background", " rgb(236 239 241)");
-                root.style.setProperty("--dark-background", " rgb(207 216 220)");
-
-                /* Personalizando blocos das seções */
-
-                let noThemes = document.querySelectorAll(".block");
-
-                noThemes.forEach(element => {
-                    element.style.setProperty("color", properties.getPropertyValue("--font-color-dark"))
-                })
-
-                /* Personalizando os controles de estilo da página */
-
-                let controls = document.querySelectorAll(".control");
-
-                controls.forEach(element => {
-                    element.style.setProperty("background-color", properties.getPropertyValue("--color-theme"));
-                })
-            }
-            else {
-                classElements.unshift("fa-solid");
-
-                /* Alternando para o tema escuro */
-
-                root.style.setProperty("--body-background", " rgb(0 0 0)");
-                root.style.setProperty("--light-background", " rgb(53 59 72)");
-                root.style.setProperty("--dark-background", " rgb(47 54 64)");
-
-                /* Personalizando blocos das seções */
-
-                let noThemes = document.querySelectorAll(".block");
-
-                noThemes.forEach(element => {
-                    element.style.setProperty("color", properties.getPropertyValue("--font-color-light"))
-                })
-
-                /* Personalizando os controles de estilo da página */
-
-                let controls = document.querySelectorAll(".control");
-
-                controls.forEach(element => {
-                    element.style.setProperty("background-color", properties.getPropertyValue("--font-color-light"));
-                })
-            }
-
-            className.forEach(item => {
-                this.classList.remove(item);
-            })
-
-            classElements.forEach(item => {
-                this.classList.add(item);
-            })
-        }
-    </script> 
+  <script src="./js/personal-attributes.js"></script>
+  <script src="./js/projects.js"></script>
+  <script src="./js/script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project | Pixels Art</title>
+</head>
+<body>
+    <main id="main">
+        <section id="adjust">
+            <header id="header">
+                <h1 id="title">Paleta de Cores</h1>
+            </header>
+    
+            <section id="color-palette">
+                <div class="color selected"></div>
+                <div class="color"></div>
+                <div class="color"></div>
+                <div class="color"></div>
+                <div class="color multicolor">
+                    <ion-icon id="icon" name="color-palette-outline"></ion-icon>
+                    <input id="color-picker" type="color" title="Selecionador de cores">
+                </div>
+            </section>
+    
+            <section id="user-adjust">
+                <label for="lines">Linhas: </label>
+                <select name= "lines" id="board-size-line" value="05"></select>
+                <label for="columns">Colunas: </label>
+                <select name= "columns" id="board-size-column"></select>
+                <button id="generate-board">aplicar</button>
+            </section>
+    
+            <button id="clear-board">Limpar Tela de pintura</button>
+        </section>
+        
+
+        <section id="pixel-board"></section>
+    </main>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
