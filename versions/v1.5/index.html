@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="author" content="Leonardo C Araújo">
+  <meta name="description" content="Este é o portfólio de Leonardo C Araújo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+  <link rel="apple-touch-icon" sizes="57x57" href="./icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+  <link rel="manifest" href="./icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Portfólio | Leonardo C Araújo</title>
+</head>
+
+<body>
+  <aside>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <button type="button" class="navigation__button navigation__button--active" page-index="welcome"
+            title="Página Inicial">
+            <i class="navigation__icon fa-solid fa-user-astronaut"></i>
+          </button>
+        </li>
+        <li class="navigation__item">
+          <button type="button" class="navigation__button" page-index="projects" title="Projetos">
+            <i class="navigation__icon fa-solid fa-clone"></i>
+          </button>
+        </li>
+        <li class="navigation__item">
+          <button type="button" class="navigation__button" page-index="contact" title="Contato">
+            <i class="navigation__icon fa-solid fa-paper-plane"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Welcome -->
+  <div class="main-container main-container--active" page-name="welcome">
+    <section class="welcome">
+      <div class="welcome__aside">
+        <img src="./images/avatar.png" class="welcome__aside__avatar" alt="Imagem de Leonardo C Araújo" />
+        <h1 class="welcome__aside__name">Leonardo C Araújo</h1>
+        <h2 class="welcome__aside__area">Web Developer</h2>
+        <p class="welcome__aside__status">
+          “Amante de tecnologia, admirador da natureza e curioso pelo
+          universo!”
+        </p>
+        <ul class="welcome__aside__list">
+          <li class="welcome__aside__item">
+            <a href="https://github.com/ogbeni-leonardo" target="_blank" title="Github">
+              <i class="welcome__aside__icon fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li class="welcome__aside__item">
+            <a href="https://www.linkedin.com/in/ogbeni-leonardo" target="_blank" title="Linkedin">
+              <i class="welcome__aside__icon fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="welcome__aside__item">
+            <a href="https://wa.me/5584981820801" target="_blank" title="Whatsapp">
+              <i class="welcome__aside__icon fa-brands fa-whatsapp"></i>
+            </a>
+          </li>
+          <li class="welcome__aside__item">
+            <a href="mailto:ogbeni.leonardo@outlook.com" target="_blank" title="E-mail">
+              <i class="welcome__aside__icon fa-solid fa-at"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="welcome__content">
+        <h1 class="welcome__content__title">Seja muito bem-vindo(a)!</h1>
+        <div class="inside-container arrow">
+          <p class="welcome__content__paragraph">
+            "Eu sou o Léo, natural de uma cidadezinha no interior do Rio
+            Grande do Norte. A ideia de construir algo, definitivamente, é
+            encantadora aos meus olhos. Apaixonado por tecnologia, vi nela a
+            oportunidade de fazer a diferença na vida de outras pessoas e
+            também na minha."
+          </p>
+        </div>
+        <div class="inside-container welcome__content__attributes">
+          <h2 class="welcome__content__attributes__title">Atributos pessoais</h2>
+          <hr />
+          <ul id="welcome__content__attributes__list"></ul>
+        </div>
+        <button type="button" class="more-info" page-index="about-me">
+          Saiba mais<i class="more-info__icon fa-solid fa-arrow-down"></i>
+        </button>
+      </div>
+    </section>
+  </div>
+
+  <!-- About Me -->
+  <div class="main-container" page-name="about-me">
+    <section class="about-me">
+      <h1 class="section-title">Um pouco mais sobre mim</h1>
+      <div class="about-me__message">
+        <img src="./images/avatar.png" class="about-me__avatar" alt="Imagem de Leonardo C Araújo" />
+        <div class="inside-container arrow">
+          <p class="about-me__paragraph">“Uma característica sempre marcante em mim foi a curiosidade &ndash;
+            curiosidade para entender como as coisas funcionam. Quando criança tinha o hábito de desmontar eletrônicos
+            (mesmo sem entender nada a respeito) e achava incrível como tava tudo tão organizado. Meu primeiro contato
+            com um computador foi bem parecido, só que dessa vez o que me chamou atenção foi o sistema… <i>Como era
+              possível criar algo tão interativo?</i> Desde esse primeiro contato tenho investido em conhecer como essas
+            tecnologias funcionam. <em><b>Ter o poder de criação em suas mãos te dá a capacidade de construir coisas
+                incríveis e descobrir a solução para diversos problemas que te afetam a nível pessoal, mas te dá também
+                a capacidade de ajudar outras pessoas.</b></em>”
+          </p>
+        </div>
+      </div>
+      <h2 class="section-title section-title--tech">Aqui estão as tecnologias que tenho familiaridade e experiência</h2>
+      <ul class="inside-container about-me__list">
+        <li class="about-me__item">
+          <i class="about-me__icon devicon-html5-plain-wordmark" title="HTML5"></i>
+        </li>
+        <li class="about-me__item">
+          <i class="about-me__icon devicon-css3-plain-wordmark" title="CSS"></i>
+        </li>
+        <li class="about-me__item">
+          <i class="about-me__icon devicon-javascript-plain" title="JavaScript"></i>
+        </li>
+        <li class="about-me__item">
+          <i class="about-me__icon devicon-git-plain-wordmark" title="Git"></i>
+        </li>
+        <li class="about-me__item">
+          <i class="about-me__icon devicon-github-original-wordmark" title="Github"></i>
+        </li>
+        <li class="about-me__item">
+          <i class="about-me__icon devicon-python-plain-wordmark" title="Python"></i>
+        </li>
+        <li class="about-me__item">
+          <i class="about-me__icon devicon-markdown-original" title="Markdown"></i>
+        </li>
+        <li class="about-me__item">
+          <i class="about-me__icon devicon-bash-plain" title="Bash"></i>
+        </li>
+      </ul>
+      <button type="button" class="more-info" page-index="projects">
+        Visite meus projetos<i class="more-info__icon fa-solid fa-arrow-down"></i>
+      </button>
+    </section>
+  </div>
+
+  <!-- Projects -->
+  <div class="main-container" page-name="projects">
+    <section class="projects">
+      <h1 class="section-title">Meus Projetos</h1>
+      <div class="projects__content">
+        <ul class="inside-container">
+          <li>
+            <button type="button" class="project__selector project__selector--active"
+              project-page-selector="trybe">Projetos Trybe</button>
+          </li>
+        </ul>
+        <section class="projects__pages">
+          <ul project-page-name="trybe" class="project__page--active"></ul>
+        </section>
+      </div>
+      <button type="button" class="more-info" page-index="contact">
+        Gostaria de me enviar uma mensagem?<i class="more-info__icon fa-solid fa-arrow-down"></i>
+      </button>
+    </section>
+  </div>
+
+  <!-- Contact-->
+  <div class="main-container" page-name="contact">
+    <section class="contact">
+      <form class="contact__form inside-container">
+        <h1 class="section-title">Me mande uma mensagem</h1>
+        <div class="contact__form__name">
+          <label for="firstname">
+            Primeiro nome:
+            <input type="text" id="firstname" placeholder="Digite seu primeiro nome" required>
+          </label>
+          <label for="lastname">
+            Sobrenome:
+            <input type="text" id="lastname" placeholder="Digite seu sobrenome" required>
+          </label>
+        </div>
+        <label for="email">
+          E-mail:
+          <input type="email" id="email" placeholder="Digite seu e-mail" required>
+        </label>
+        <label for="text-area">
+          Escreva sua mensagem:
+          <textarea id="text-area" cols="30" rows="10" minlength="2" maxlength="1500"
+            placeholder="Digite sua mensagem aqui..." required></textarea>
+          <p id="char-counter">0/1500</p>
+        </label>
+        <button type="submit" id="contact__submit">Enviar mensagem</button>
+      </form>
+      <div class="alert-message">
+        <i class="alert-message__icon fa-solid fa-circle-exclamation"></i>
+        Fico muito feliz por seu interesse em me contatar. Mas sinto informar que ainda não cheguei nessa parte!
+      </div>
+    </section>
+  </div>
+
+  <script src="./js/personal-attributes.js"></script>
+  <script src="./js/projects.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
